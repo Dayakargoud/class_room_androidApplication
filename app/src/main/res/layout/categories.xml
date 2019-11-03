@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:padding="12dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/time_table_icon"
+            android:layout_marginStart="48dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@color/white"
+            android:src="@drawable/timetable" />
+
+        <TextView
+            android:id="@+id/schedule_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_table_icon"
+            android:layout_marginStart="32dp"
+            android:text="Schedule"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <ImageButton
+            android:id="@+id/sylabus_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/syllabus" />
+        <TextView
+            android:id="@+id/syallabus_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_below="@+id/time_table_icon"
+            android:layout_centerHorizontal="true"
+            android:text="Syllabus"
+            />
+
+        <ImageButton
+            android:id="@+id/faculty"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="48dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+
+            android:src="@drawable/faculty" />
+        <TextView
+            android:id="@+id/faculty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_below="@+id/faculty"
+            android:layout_marginEnd="32dp"
+            android:text="Faculty"
+            android:layout_alignParentEnd="true"
+            />
+
+        <ImageButton
+            android:id="@+id/winnou"
+            android:layout_marginTop="24dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/schedule_text"
+            android:layout_marginStart="48dp"
+            android:background="@color/white"
+
+            android:src="@drawable/winnou" />
+        <TextView
+            android:id="@+id/winnou_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_below="@+id/winnou"
+            android:layout_marginStart="32dp"
+            android:text="Winnou"
+            />
+
+        <ImageButton
+            android:id="@+id/exams"
+            android:layout_marginTop="24dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/syallabus_text"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+
+            android:src="@drawable/test"/>
+        <TextView
+            android:id="@+id/exam_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_below="@+id/exams"
+            android:layout_centerHorizontal="true"
+            android:text="Bunk Manager"
+            />
+
+        <ImageButton
+            android:id="@+id/resources"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/faculty_text"
+            android:background="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/learning" />
+        <TextView
+            android:id="@+id/resources_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_below="@+id/resources"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="32dp"
+            android:text="E-Books"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

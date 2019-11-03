@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SetUpActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+        <TextView
+            android:id="@+id/selection_Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_mode_edit_black_24dp"
+            android:drawablePadding="4dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Quick Setup"
+            android:layout_margin="32dp"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/selection_Info"
+            android:background="@drawable/setup_background"
+
+            >
+            <TextView
+                android:id="@+id/college_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College"
+                android:focusable="true"
+                android:padding="4dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_margin="16dp"
+                android:textColor="@color/colorAccent"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_college"
+                android:focusable="true"
+                android:padding="4dp"
+                android:layout_margin="16dp">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setup_background"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear1"
+
+            >
+        <TextView
+            android:id="@+id/branch_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch "
+            android:focusable="true"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorAccent"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:padding="4dp"
+            android:id="@+id/spinner_Branch"
+
+            android:layout_margin="16dp">
+        </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:background="@drawable/setup_background"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear2"
+
+            >
+        <TextView
+            android:id="@+id/section_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            android:focusable="true"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorAccent"
+            />
+        <Spinner
+            android:id="@+id/spinner_subBranch"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+        </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:background="@drawable/setup_background"
+            android:layout_below="@+id/linear3"
+
+            >
+        <TextView
+            android:id="@+id/year_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year     "
+            android:focusable="true"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorAccent"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:id="@+id/spinner_Year"
+            android:layout_margin="16dp">
+        </Spinner>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready"
+            android:layout_margin="32dp"
+            android:textColor="#FFFFFF"
+            android:enabled="false"
+            android:layout_below="@+id/linear4"
+            android:id="@+id/selection_add_data_button"
+            android:elevation="4dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_enable_disable_color"
+
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
